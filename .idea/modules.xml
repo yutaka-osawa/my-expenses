@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/my-expenses.iml" filepath="$PROJECT_DIR$/.idea/my-expenses.iml" />
-      <module fileurl="file://$PROJECT_DIR$/my-expenses-restapi/my-expenses-restapi.iml" filepath="$PROJECT_DIR$/my-expenses-restapi/my-expenses-restapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-expenses-frontend.iml" filepath="$PROJECT_DIR$/my-expenses-frontend.iml" />
     </modules>
   </component>
 </project>
