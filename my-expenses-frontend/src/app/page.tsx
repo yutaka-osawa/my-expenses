@@ -1,13 +1,12 @@
 import React from "react";
 import Calendar from "../component/Calendar";
 
-
 const Home = () => {
-    return(
-        <div>
-            <Calendar />
-        </div>
-    )
+  return (
+    <div>
+      <Calendar />
+    </div>
+  );
 };
 
 export default Home;
