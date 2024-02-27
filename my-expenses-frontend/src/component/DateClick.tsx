@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 
 // type DateClickArg = {
 //   date: Date; // クリックされた日付
@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
 // };
 const DateClick = ({ dateStr }: { dateStr: string }) => {
   // const dateStr = info.dateStr;
-  const navigate = useNavigate();
+  const { push } = useRouter();
 
-  navigate(`/date/${dateStr}`);
+  push(`/date/${dateStr}`);
 
   return (
     <div>navigate(`/date/${dateStr}`);</div>
