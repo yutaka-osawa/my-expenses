@@ -4,13 +4,18 @@ import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import jaLocale from "@fullcalendar/core/locales/ja";
-import DateClick from "@/component/DateClick";
+import interactionPlugin, { DateClickArg } from "@fullcalendar/interaction";
+import { useCallback } from "react";
 
 const Calendar = () => {
+  const handleDateClick = useCallback((arg: DateClickArg) => {
+    alert(arg.dateStr);
+  }, []);
+
   return (
     <div>
       <FullCalendar
-        plugins={[dayGridPlugin, timeGridPlugin]}
+        plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
         initialView="dayGridMonth"
         locales={[jaLocale]}
         locale={"ja"}
@@ -19,7 +24,7 @@ const Calendar = () => {
           center: "title",
           right: "dayGridMonth,timeGridWeek",
         }}
-        dateClick={DateClick}
+        dateClick={handleDateClick}
       />
     </div>
   );
