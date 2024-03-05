@@ -12,7 +12,9 @@ const Calendar = () => {
   const { push } = useRouter();
   const handleDateClick = useCallback(
     (arg: DateClickArg) => {
-      push(`/date/${arg.dateStr}`);
+      // push(`/date/${arg.dateStr}`);
+      push(`/pages/${arg.dateStr}`);
+      // push("/pages/Registration");
     },
     [push],
   );
