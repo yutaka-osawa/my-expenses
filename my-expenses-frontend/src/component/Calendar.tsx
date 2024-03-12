@@ -13,7 +13,7 @@ const Calendar = () => {
   const handleDateClick = useCallback(
     (arg: DateClickArg) => {
       // push(`/date/${arg.dateStr}`);
-      push(`/pages/${arg.dateStr}`);
+      push(`/${arg.dateStr}`);
       // push("/pages/Registration");
     },
     [push],
