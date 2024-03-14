@@ -15,10 +15,10 @@ const Page = ({ params: { dateKey } }: { params: { dateKey: string } }) => {
   const accounts = ["現金", "銀行", "電子マネー", "クレジット"];
   return (
     <div className={"Page"}>
-      <div className={"flex justify-center"}>
-        <h1 className={"justify-center text-2xl"}>{dateKey}</h1>
+      <div className={"flex justify-center mt-8"}>
+        <h1 className={"justify-center text-6xl"}>{dateKey}</h1>
       </div>
-      <div className={"flex justify-center"}>
+      <div className={"flex justify-center mt-16"}>
         <p className={"mr-2"}>金額</p>
         <input
           className={"border-2 border-black"}
